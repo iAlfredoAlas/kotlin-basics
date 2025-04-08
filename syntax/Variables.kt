@@ -30,6 +30,6 @@ fun main () {
     //Constans
     val test2:String = "Alas"
 
-    test2 = "Alas2" //It is no possible
+    //test2 = "Alas2" //It is no possible
 
 }
