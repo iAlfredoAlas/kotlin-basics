@@ -22,6 +22,14 @@ fun main() {
     println("Module:")
     println(age % favoriteNumber)
 
+    //Convert to Int
+
+    var age2:String = "29"
+    var favoriteNumber2:Int = 19
+
+    println("Sum:")
+    println(age2.toInt() + favoriteNumber2)
+
     //String Operations
 
     var name:String = "Alfredo"
