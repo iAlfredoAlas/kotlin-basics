@@ -6,6 +6,10 @@ fun main() {
     subtract(29,5)
     val result = subtract(20,5)
     println(result)
+
+    val result2 = add3(3,3)
+    println(result2)
+
 }
 
 
@@ -23,3 +27,5 @@ fun subtract(age:Int, favoriteNumber:Int):Int{
     val result:Int = age - favoriteNumber
     return result
 }
+
+fun add3(age:Int, favoriteNumber: Int):Int = age + favoriteNumber
