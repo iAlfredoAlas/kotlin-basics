@@ -2,7 +2,7 @@ package contitionals
 
 fun main(){
     println (getMonthFromNumber(4))
-    println (getQuarterFromNumber(4))
+    println (getQuarterFromNumber(14))
 }
 
 fun getMonthFromNumber(month:Int):String{
@@ -25,10 +25,11 @@ fun getMonthFromNumber(month:Int):String{
 
 fun getQuarterFromNumber(month:Int):String{
     return when (month) {
+        !in 1..12 -> "Is not a valid month"
         in 1..3-> "Fist Quarter"
         in 4..6 -> "Second Quarter"
         in 7..9 -> "Third Quarter"
         in 10..12 -> "Fourth Quarter"
-        else -> "Is not a valid month"
+        else -> "Unexpexted case"
     }
 }
