@@ -1,7 +1,7 @@
 package contitionals
 
 fun main(){
-    println (whatMonthIs(4))
+    println (getMonthFromNumber(4))
 }
 
 fun getMonthFromNumber(month:Int):String{
@@ -21,3 +21,4 @@ fun getMonthFromNumber(month:Int):String{
         else -> "Is not a month"
     }
 }
+
