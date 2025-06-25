@@ -4,7 +4,7 @@ fun main(){
     println (whatMonthIs(4))
 }
 
-fun whatMonthIs(month:Int):String{
+fun getMonthFromNumber(month:Int):String{
     return when (month) {
         1 -> "January"
         2 -> "February"
