@@ -3,6 +3,7 @@ package contitionals
 fun main(){
     println (getMonthFromNumber(4))
     println (getQuarterFromNumber(14))
+    println (getTypeVariable(true))
 }
 
 fun getMonthFromNumber(month:Int):String{
@@ -31,5 +32,17 @@ fun getQuarterFromNumber(month:Int):String{
         in 7..9 -> "Third Quarter"
         in 10..12 -> "Fourth Quarter"
         else -> "Unexpexted case"
+    }
+}
+
+fun getTypeVariable(type:Any):String{
+    return when (type) {
+        is String -> "String"
+        is Int -> "Int"
+        is Long -> "Long"
+        is Boolean -> "Boolean"
+        is Float -> "Float"
+        is Double -> "Double"
+        else -> "Is not a valid type"
     }
 }
